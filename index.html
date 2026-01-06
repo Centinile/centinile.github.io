@@ -38,7 +38,13 @@
             padding: 0 20px;
         }
 
+        /* Default section padding */
         section { padding: 80px 0; }
+
+        /* Specific padding for Projects to give it more space (Requested Change) */
+        #projects {
+            padding: 140px 0; 
+        }
 
         /* --- NAVIGATION --- */
         nav {
@@ -52,7 +58,7 @@
 
         .nav-container {
             display: flex;
-            justify-content: center; /* Centered logo since links are gone */
+            justify-content: center;
             align-items: center;
             height: 60px;
         }
@@ -61,7 +67,7 @@
         
         /* --- HERO SECTION --- */
         #hero {
-            min-height: 80vh; /* Reduced slightly since button is gone */
+            min-height: 80vh; 
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -84,6 +90,9 @@
             color: var(--text-color); 
             margin-bottom: 30px; 
             font-weight: 300;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .about-text {
@@ -92,12 +101,15 @@
             font-size: 1.1rem;
             margin-bottom: 40px;
             line-height: 1.8;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         /* --- PROJECTS GRID --- */
         .section-title { 
             text-align: center; 
-            margin-bottom: 50px; 
+            margin-bottom: 60px; 
             font-size: 2rem; 
             color: var(--text-color);
             position: relative;
@@ -116,7 +128,7 @@
         .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
+            gap: 30px; 
         }
 
         .project-card {
@@ -168,11 +180,12 @@
         }
         .project-link:hover { text-decoration: underline; }
 
-        /* --- CONTACT & FOOTER --- */
+        /* --- CONTACT --- */
         #contact { 
             background-color: var(--card-bg); 
             text-align: center;
             border-top: 1px solid #374151;
+            padding-bottom: 80px; 
         }
         
         .contact-info {
@@ -190,14 +203,6 @@
             margin-right: 8px;
         }
 
-        footer {
-            background: #000; 
-            color: var(--text-muted);
-            text-align: center;
-            padding: 25px 0;
-            font-size: 0.9rem;
-        }
-
         /* --- MOBILE RESPONSIVENESS --- */
         @media (max-width: 600px) {
             #hero h1 { font-size: 2.5rem; }
@@ -208,21 +213,20 @@
 
     <nav>
         <div class="container nav-container">
-            <a href="#" class="logo">Simone Go</a>
-            </div>
+            <a href="#" class="logo">My Portfolio</a>
+        </div>
     </nav>
 
     <section id="hero">
         <div class="container">
             <h1>Hi, I'm Simone Go</h1>
-            <p class="tagline">A passionate developer creating impact through code.</p>
+            <p class="tagline">Computer Science student specializing in software, web, and game development</p>
             
             <p class="about-text">
-                I am a student and developer based in Quezon City, Philippines. I specialize in solving complex problems and building efficient software. 
-                When I'm not coding, I enjoy learning about new technologies and working on creative projects.
+                I’m a fourth-year Computer Science student at the University of Santo Tomas with a strong interest in software, web, and game development.
+                I enjoy building practical systems, interactive applications, and experimenting with AI-driven solutions.
             </p>
-            
-            </div>
+        </div>
     </section>
 
     <section id="projects" class="container">
@@ -232,8 +236,8 @@
             <div class="project-card">
                 <div class="project-img">Project Image 1</div>
                 <div class="project-info">
-                    <div class="tags">Java • Web Dev</div>
-                    <h3>MV88 Ventures: Inventory Management System for Pet Accessories</h3>
+                    <div class="tags">Java • MySQL • JSP • Servlets</div>
+                    <h3>MV88 Ventures: Inventory Management System</h3>
                     <p>An inventory system to track stock levels, manage sales records, and organize product data for a pet accessory business.</p>
                     <a href="https://github.com/Centinile/SE_SourceCode.git" target="_blank" class="project-link">View Project &rarr;</a>
                 </div>
@@ -242,17 +246,17 @@
             <div class="project-card">
                 <div class="project-img">Project Image 2</div>
                 <div class="project-info">
-                    <div class="tags">Unity • Thesis</div>
-                    <h3>SpeakUP – Job Interview Training Game With Adaptive Game Dynamics Using DQN and PPO</h3>
-                    <p>An interactive interview simulation using Deep Q-Networks (DQN) and Proximal Policy Optimization (PPO) to provide users with personalized, adaptive communication feedback. </p>
-                    <a href="https://github.com/Centinile/GD9_Thesis.git" class="project-link">View Project &rarr;</a>
+                    <div class="tags">Unity • C# • DQN • PPO</div>
+                    <h3>SpeakUP – Job Interview Training Game</h3>
+                    <p>An interactive interview simulation using Deep Q-Networks (DQN) and Proximal Policy Optimization (PPO) for adaptive feedback.</p>
+                    <a href="https://github.com/Centinile/GD9_Thesis.git" target="_blank" class="project-link">View Project &rarr;</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-img">Project Image 3</div>
                 <div class="project-info">
-                    <div class="tags">WEB DEV • RESEARCH</div>
+                    <div class="tags">TAG</div>
                     <h3>Project Title Three</h3>
                     <p>A brief description of the project goes here. Mention any specific algorithms or frameworks.</p>
                     <a href="#" class="project-link">View Project &rarr;</a>
@@ -269,22 +273,18 @@
             
             <div class="contact-info">
                 <div class="contact-item">
-                    <span>Email:</span> your.email@example.com
+                    <span>Email:</span> simonego90@gmail.com
                 </div>
                 <div class="contact-item">
-                    <span>LinkedIn:</span> linkedin.com/in/simonego
+                    <span>LinkedIn:</span> www.linkedin.com/in/simone-go-02091b36a
                 </div>
                 <div class="contact-item">
-                    <span>GitHub:</span> github.com/simonego
+                    <span>Phone Number:</span> +63 917 148 6601
                 </div>
             </div>
 
         </div>
     </section>
-
-    <footer>
-        <p>&copy; 2026 Simone Go. All rights reserved.</p>
-    </footer>
 
 </body>
 </html>
