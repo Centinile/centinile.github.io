@@ -148,14 +148,13 @@
             border-color: var(--primary-color);
         }
 
+        /* NEW CSS - USE THIS */
         .project-img {
-            height: 180px;
-            background-color: #374151; 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #9ca3af;
-            font-size: 0.9rem;
+            width: 100%;          /* Force image to take full width of card */
+            height: 180px;        /* Keep the uniform height */
+            object-fit: cover;    /* Crops the image so it doesn't stretch/squish */
+            object-position: center; /* Centers the image */
+            border-bottom: 1px solid #374151; /* Optional: adds separation line */
         }
 
         .project-info { padding: 25px; flex-grow: 1; display: flex; flex-direction: column; }
@@ -234,7 +233,7 @@
         <div class="project-grid">
             
             <div class="project-card">
-                <div class="project-img">Project Image 1</div>
+                <img src="images/MV88.png" alt="Inventory System Screenshot" class="project-img">
                 <div class="project-info">
                     <div class="tags">Java • MySQL • JSP • Servlets</div>
                     <h3>MV88 Ventures: Inventory Management System</h3>
@@ -244,7 +243,7 @@
             </div>
 
             <div class="project-card">
-                <div class="project-img">Project Image 2</div>
+                <img src="images/SpeakUP.png" alt="SpeakUP Game Screenshot" class="project-img">
                 <div class="project-info">
                     <div class="tags">Unity • C# • DQN • PPO</div>
                     <h3>SpeakUP – Job Interview Training Game</h3>
@@ -254,11 +253,11 @@
             </div>
 
             <div class="project-card">
-                <div class="project-img">Project Image 3</div>
+                <img src="images/DanDan Dungeon.png" alt="DanDan Dungeon Screenshot" class="project-img">
                 <div class="project-info">
-                    <div class="tags">TAG</div>
-                    <h3>Project Title Three</h3>
-                    <p>A brief description of the project goes here. Mention any specific algorithms or frameworks.</p>
+                    <div class="tags">Unity • C#</div>
+                    <h3>DanDan Dungeon – 2D Dungeon Crawler Game </h3>
+                    <p>A game that features AI enemies with dynamic pathfinding as well as implementing advanced logic for game mechanics.</p>
                     <a href="#" class="project-link">View Project &rarr;</a>
                 </div>
             </div>
