@@ -41,7 +41,7 @@
         section { padding: 80px 0; }
 
         #projects {
-            padding: 140px 0; 
+            padding: 60px 0; 
         }
 
         nav {
@@ -195,6 +195,38 @@
             margin-right: 8px;
         }
 
+        .contact-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .contact-badge {
+            background: var(--card-bg);
+            border: 2px solid #374151;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-badge:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(96, 165, 250, 0.2);
+        }
+
+        .contact-badge i {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
         .social-icons {
             display: flex;
             justify-content: center;
@@ -223,8 +255,67 @@
             transform: translateY(-5px);
         }
 
+        .btn-primary {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary-color);
+            color: var(--bg-color);
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-color);
+            margin-top: 10px;
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(96, 165, 250, 0.3);
+        }
+
+        #skills {
+            background-color: var(--bg-color);
+            padding: 60px 0;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .skill-badge {
+            background: var(--card-bg);
+            border: 2px solid #374151;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .skill-badge:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(96, 165, 250, 0.2);
+        }
+
+        .skill-badge i {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
         @media (max-width: 600px) {
             #hero h1 { font-size: 2.5rem; }
+            .skill-badge { font-size: 0.85rem; padding: 8px 16px; }
         }
     </style>
 </head>
@@ -245,6 +336,30 @@
                 I’m a fourth-year Computer Science student at the University of Santo Tomas with a strong interest in software, web, and game development.
                 I enjoy building practical systems, interactive applications, and experimenting with AI-driven solutions.
             </p>
+            <a href="CV Simone Gregor J. Go.pdf" download class="btn-primary">
+                <i class="fas fa-download"></i> Download CV
+            </a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-container">
+                <div class="skill-badge"><i class="fab fa-java"></i> Java</div>
+                <div class="skill-badge"><i class="fab fa-js"></i> JavaScript</div>
+                <div class="skill-badge"><i class="fab fa-python"></i> Python</div>
+                <div class="skill-badge"><i class="fas fa-code"></i> C++</div>
+                <div class="skill-badge"><i class="fas fa-database"></i> SQL</div>
+                <div class="skill-badge"><i class="fas fa-mobile-alt"></i> Flutter</div>
+                <div class="skill-badge"><i class="fab fa-html5"></i> HTML</div>
+                <div class="skill-badge"><i class="fab fa-css3-alt"></i> CSS</div>
+                <div class="skill-badge"><i class="fab fa-unity"></i> Unity</div>
+                <div class="skill-badge"><i class="fab fa-git-alt"></i> Git</div>
+                <div class="skill-badge"><i class="fas fa-gamepad"></i> Game Development</div>
+                <div class="skill-badge"><i class="fas fa-laptop-code"></i> Software Development</div>
+                <div class="skill-badge"><i class="fas fa-paint-brush"></i> UI Design</div>
+            </div>
         </div>
     </section>
 
@@ -278,7 +393,7 @@
                     <div class="tags">Unity • C#</div>
                     <h3>DanDan Dungeon – 2D Dungeon Crawler Game </h3>
                     <p>A game that features AI enemies with dynamic pathfinding as well as implementing advanced logic for game mechanics.</p>
-                    <a href="#" class="project-link">View Project &rarr;</a>
+                    <a href="https://github.com/Centinile/Dungeon-Crawler.git" class="project-link">View Project &rarr;</a>
                 </div>
             </div>
 
@@ -300,10 +415,9 @@
                 </a>
             </div>
             
-            <div class="contact-info">
-                <div class="contact-item">
-                    <span>simonego90@gmail.com | +63 917 148 6601</span>
-                </div>
+            <div class="contact-badges">
+                <div class="contact-badge"><i class="fas fa-envelope"></i> simonego90@gmail.com</div>
+                <div class="contact-badge"><i class="fas fa-phone"></i> +63 917 148 6601</div>
             </div>
 
         </div>
