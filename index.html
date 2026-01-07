@@ -5,8 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simone Go - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
+    
+    <meta property="og:title" content="Simone Go - Software Developer Portfolio">
+    <meta property="og:description" content="Computer Science student specializing in Java, Unity, and Full-stack development. View my projects and CV.">
+    
+    <meta property="og:image" content="https://centinile.github.io/images/preview.png">
+    
+    <meta property="og:url" content="https://centinile.github.io/">
+    
+    <meta property="og:type" content="website">
 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://centinile.github.io/images/preview.png">
+
+    <style>
+        /* --- GLOBAL VARIABLES --- */
         :root {
             --primary-color: #60a5fa;
             --bg-color: #111827;
@@ -342,27 +355,6 @@
         </div>
     </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-container">
-                <div class="skill-badge"><i class="fab fa-java"></i> Java</div>
-                <div class="skill-badge"><i class="fab fa-js"></i> JavaScript</div>
-                <div class="skill-badge"><i class="fab fa-python"></i> Python</div>
-                <div class="skill-badge"><i class="fas fa-code"></i> C++</div>
-                <div class="skill-badge"><i class="fas fa-database"></i> SQL</div>
-                <div class="skill-badge"><i class="fas fa-mobile-alt"></i> Flutter</div>
-                <div class="skill-badge"><i class="fab fa-html5"></i> HTML</div>
-                <div class="skill-badge"><i class="fab fa-css3-alt"></i> CSS</div>
-                <div class="skill-badge"><i class="fab fa-unity"></i> Unity</div>
-                <div class="skill-badge"><i class="fab fa-git-alt"></i> Git</div>
-                <div class="skill-badge"><i class="fas fa-gamepad"></i> Game Development</div>
-                <div class="skill-badge"><i class="fas fa-laptop-code"></i> Software Development</div>
-                <div class="skill-badge"><i class="fas fa-paint-brush"></i> UI Design</div>
-            </div>
-        </div>
-    </section>
-
     <section id="projects" class="container">
         <h2 class="section-title">Featured Projects</h2>
         <div class="project-grid">
@@ -373,7 +365,12 @@
                     <div class="tags">Java • MySQL • JSP • Servlets</div>
                     <h3>MV88 Ventures: Inventory Management System</h3>
                     <p>An inventory system to track stock levels, manage sales records, and organize product data for a pet accessory business.</p>
-                    <a href="https://github.com/Centinile/SE_SourceCode.git" target="_blank" class="project-link">View Project &rarr;</a>
+                    <div class="project-actions">
+                        <a href="https://github.com/Centinile/SE_SourceCode.git" target="_blank" class="project-link">View Project &rarr;</a>
+                        <a href="MV88 Ventures Inventory System User Manual.pdf" target="_blank" class="btn-secondary">
+                            <i class="fas fa-file-pdf"></i> View Manual
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -383,7 +380,12 @@
                     <div class="tags">Unity • C# • DQN • PPO</div>
                     <h3>SpeakUP – Job Interview Training Game</h3>
                     <p>An interactive interview simulation using Deep Q-Networks (DQN) and Proximal Policy Optimization (PPO) for adaptive feedback.</p>
-                    <a href="https://github.com/Centinile/GD9_Thesis.git" target="_blank" class="project-link">View Project &rarr;</a>
+                    <div class="project-actions">
+                        <a href="https://github.com/Centinile/GD9_Thesis.git" target="_blank" class="project-link">View Project &rarr;</a>
+                        <a href="SpeakUP_ Interview Simulation_System Demo.pdf" target="_blank" class="btn-secondary">
+                            <i class="fas fa-file-pdf"></i> View Demo
+                        </a>
+                    </div>
                 </div>
             </div>
 
